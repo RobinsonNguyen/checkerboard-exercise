@@ -16,6 +16,7 @@ function generateRandomColor(){
     return `rgb(${x},${y},${z})`
     
 }
+
 for(let i = 0; i < 81; i++){
     makeSquare(generateRandomColor());
 }

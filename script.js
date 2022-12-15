@@ -20,7 +20,10 @@ function generateRandomColor(){
 function changeSquares(){
     let change = document.getElementsByTagName('div');
     for(let i = 0; i < change.length; i++)
-        change[i].style.backgroundcolor = generateRandomColor();
+        change[i].style.background = generateRandomColor();
+}
+for(let i = 0; i < 81; i++){
+    makeSquare(generateRandomColor());
 }
 setInterval(changeSquares,2000);
 

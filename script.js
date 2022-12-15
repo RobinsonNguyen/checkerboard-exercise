@@ -22,6 +22,5 @@ function changeSquares(){
     for(let i = 0; i < change.length; i++)
         change[i].style.backgroundcolor = generateRandomColor();
 }
-
 setInterval(changeSquares,2000);
 

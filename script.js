@@ -16,7 +16,12 @@ function generateRandomColor(){
     return `rgb(${x},${y},${z})`
     
 }
-for(let i = 0; i < 81; i++){
-    makeSquare(generateRandomColor());
+
+function changeSquares(){
+    let change = document.getElementsByTagName('div');
+    for(let i = 0; i < change.length; i++)
+        change[i].style.backgroundcolor = generateRandomColor();
 }
+
+setInterval(changeSquares,2000);
 
